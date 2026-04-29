@@ -192,6 +192,13 @@ screenshots/
 
 
 https://youtube.com/shorts/U8DIiSc2xGA?si=7rS16rPdLuZ28bH0
+---------------------------------------
+url of kaggle plateform 
+
+https://kaggle.com/writeups/sonubit/ai-project
+
+
+
 
 
 
