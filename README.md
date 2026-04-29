@@ -74,3 +74,60 @@ Input Video
 - Annotated tracked video
 - Bounding boxes with IDs
 - Optional trajectory analysis
+
+
+# Short Technical Report
+
+## 1. Model / Detector Used
+This project uses YOLOv8 for object detection. The detector identifies subjects in each frame and generates bounding boxes for tracking.
+
+## 2. Tracking Algorithm Used
+ByteTrack (or DeepSORT) is used for multi-object tracking. It assigns a unique ID to each detected subject and maintains that identity across frames.
+
+## 3. Why This Combination Was Selected
+YOLOv8 was selected because it provides fast and accurate object detection.
+
+ByteTrack was chosen because:
+- Strong ID persistence
+- Good handling of occlusions
+- Real-time performance
+- Works well with YOLO detections
+
+The combination is efficient and widely used in multi-object tracking tasks.
+
+## 4. How ID Consistency Is Maintained
+ID consistency is maintained by:
+- Matching detections across consecutive frames
+- Motion-based association
+- Bounding box similarity
+- Re-identification after short occlusions
+
+Persistent tracking IDs reduce identity switching when objects move rapidly.
+
+## 5. Challenges Faced
+Several challenges were observed:
+- Subject overlap
+- Partial occlusion
+- Fast motion blur
+- Small or distant subjects
+- Temporary missed detections
+
+These factors can affect tracking accuracy.
+
+## 6. Failure Cases Observed
+Failure cases include:
+- ID switches during heavy occlusion
+- Lost tracks when subjects leave/re-enter frame
+- False detections in crowded scenes
+- Missed detections during sudden camera movement
+
+## 7. Possible Improvements
+Potential improvements:
+- Use stronger detector model (YOLOv8m or YOLOv8l)
+- Add appearance-based re-identification
+- Tune tracker parameters
+- Use stronger trackers like DeepSORT or BoT-SORT
+- Improve handling for crowded scenes
+
+## Conclusion
+The YOLOv8 + ByteTrack pipeline provides an effective baseline for multi-object tracking, while future improvements can further improve robustness and ID stability.
