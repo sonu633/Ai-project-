@@ -154,6 +154,27 @@ project/
 └── screenshots/
 
 
+-------------------------------------
+Original Public Video Link
+Provide original source link (like your YouTube video):
+Plain text
+https://youtube.com/watch?v=DVbzsG8H4YQ
+
+--------------------------------------
+Short Technical Report (1–2 pages)
+Include:
+Model used
+Tracker used
+Why chosen
+ID consistency
+Challenges
+Failure cases
+Improvements
+
+
+
+
+
 
 
 
