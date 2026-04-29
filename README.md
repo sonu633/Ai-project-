@@ -74,7 +74,7 @@ Input Video
 - Annotated tracked video
 - Bounding boxes with IDs
 - Optional trajectory analysis
-
+---------------------------------------------------------------------------------------------------------------------
 
 # Short Technical Report
 
@@ -131,3 +131,24 @@ Potential improvements:
 
 ## Conclusion
 The YOLOv8 + ByteTrack pipeline provides an effective baseline for multi-object tracking, while future improvements can further improve robustness and ID stability.
+
+---------------------------------------------------------------------------------------------------------------------
+
+
+GitHub Repository or Zipped Codebase
+Include:
+main.py or Jupyter notebook (pipeline.ipynb)
+requirements.txt
+tracking code
+output folder
+Example:
+Plain text
+project/
+│
+├── main.py
+├── pipeline.ipynb
+├── requirements.txt
+├── README.md
+├── output_video.mp4
+├── report.pdf
+└── screenshots/
