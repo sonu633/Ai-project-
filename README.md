@@ -181,7 +181,16 @@ screenshots/
 ├── frame1.png
 ├── frame2.png
 └── frame3.png
+
 ---------------------------------------
+
+ - Introduction
+ - Pipeline explanation
+ - Code walkthrough
+ - Output demo
+ - Challenges & improvements
+
+
 https://youtube.com/shorts/U8DIiSc2xGA?si=7rS16rPdLuZ28bH0
 
 
