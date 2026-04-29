@@ -171,6 +171,17 @@ Challenges
 Failure cases
 Improvements
 
+---------------------------------------
+
+Sample Screenshots of Results
+Include frame samples showing detections/tracking.
+Example:
+Plain text
+screenshots/
+├── frame1.png
+├── frame2.png
+└── frame3.png
+
 
 
 
